@@ -1,0 +1,146 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: dark;
+}
+
+/* 1. UBUNTU YARU DARK (Default) */
+[data-theme='ubuntu-dark'] {
+  --bg-main: #181818;
+  --bg-surface: #242424;
+  --bg-surface-hover: #2e2e2e;
+  --bg-card: #202020;
+  --bg-accent-subtle: #2c001e;
+  --border-color: #383838;
+  --border-focus: #E95420;
+  --text-main: #f5f5f5;
+  --text-muted: #a5a5a5;
+  --accent-primary: #E95420; /* Ubuntu Orange */
+  --accent-primary-hover: #ff6832;
+  --accent-secondary: #77216F; /* Ubuntu Aubergine */
+  --accent-success: #38b44a;
+  --accent-warning: #e95420;
+}
+
+/* 2. DRACULA */
+[data-theme='dracula'] {
+  --bg-main: #21222c;
+  --bg-surface: #282a36;
+  --bg-surface-hover: #343746;
+  --bg-card: #282a36;
+  --bg-accent-subtle: #44475a;
+  --border-color: #44475a;
+  --border-focus: #bd93f9;
+  --text-main: #f8f8f2;
+  --text-muted: #9499ad;
+  --accent-primary: #bd93f9; /* Dracula Purple */
+  --accent-primary-hover: #caa9fa;
+  --accent-secondary: #ff79c6; /* Dracula Pink */
+  --accent-success: #50fa7b;
+  --accent-warning: #f1fa8c;
+}
+
+/* 3. NORD */
+[data-theme='nord'] {
+  --bg-main: #242933;
+  --bg-surface: #2e3440;
+  --bg-surface-hover: #3b4252;
+  --bg-card: #2e3440;
+  --bg-accent-subtle: #434c5e;
+  --border-color: #434c5e;
+  --border-focus: #88c0d0;
+  --text-main: #eceff4;
+  --text-muted: #9aa5b8;
+  --accent-primary: #88c0d0; /* Frost Cyan */
+  --accent-primary-hover: #8fbcbb;
+  --accent-secondary: #81a1c1; /* Frost Blue */
+  --accent-success: #a3be8c;
+  --accent-warning: #ebcb8b;
+}
+
+/* 4. CLEAN LIGHT */
+[data-theme='clean-light'] {
+  color-scheme: light;
+  --bg-main: #f8fafc;
+  --bg-surface: #ffffff;
+  --bg-surface-hover: #f1f5f9;
+  --bg-card: #ffffff;
+  --bg-accent-subtle: #e0f2fe;
+  --border-color: #e2e8f0;
+  --border-focus: #2563eb;
+  --text-main: #0f172a;
+  --text-muted: #64748b;
+  --accent-primary: #2563eb; /* Royal Blue */
+  --accent-primary-hover: #1d4ed8;
+  --accent-secondary: #0d9488;
+  --accent-success: #16a34a;
+  --accent-warning: #d97706;
+}
+
+body {
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Horizon Badges */
+.badge-yearly {
+  background: rgba(168, 85, 247, 0.15);
+  color: #c084fc;
+  border: 1px solid rgba(168, 85, 247, 0.3);
+}
+.badge-half-yearly {
+  background: rgba(99, 102, 241, 0.15);
+  color: #818cf8;
+  border: 1px solid rgba(99, 102, 241, 0.3);
+}
+.badge-quarterly {
+  background: rgba(59, 130, 246, 0.15);
+  color: #60a5fa;
+  border: 1px solid rgba(59, 130, 246, 0.3);
+}
+.badge-monthly {
+  background: rgba(6, 182, 212, 0.15);
+  color: #22d3ee;
+  border: 1px solid rgba(6, 182, 212, 0.3);
+}
+.badge-biweekly {
+  background: rgba(16, 185, 129, 0.15);
+  color: #34d399;
+  border: 1px solid rgba(16, 185, 129, 0.3);
+}
+.badge-weekly {
+  background: rgba(234, 179, 8, 0.15);
+  color: #facc15;
+  border: 1px solid rgba(234, 179, 8, 0.3);
+}
+.badge-daily {
+  background: rgba(249, 115, 22, 0.15);
+  color: #fb923c;
+  border: 1px solid rgba(249, 115, 22, 0.3);
+}
+.badge-hourly {
+  background: rgba(239, 68, 68, 0.15);
+  color: #f87171;
+  border: 1px solid rgba(239, 68, 68, 0.3);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
+}

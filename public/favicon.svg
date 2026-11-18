@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <linearGradient id="yaruGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#77216F" />
+      <stop offset="50%" stop-color="#5E2750" />
+      <stop offset="100%" stop-color="#E95420" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.4" />
+    </filter>
+  </defs>
+
+  <!-- Background rounded squircle -->
+  <rect x="8" y="8" width="112" height="112" rx="28" fill="url(#yaruGrad)" filter="url(#shadow)" />
+
+  <!-- Cascading Horizon Steps / Layers -->
+  <!-- Top Layer: 1Y North Star -->
+  <rect x="28" y="32" width="72" height="12" rx="6" fill="#FFFFFF" fill-opacity="0.95" />
+  
+  <!-- Middle Layer: Strategic Milestone -->
+  <rect x="36" y="52" width="56" height="10" rx="5" fill="#FFFFFF" fill-opacity="0.75" />
+  
+  <!-- Lower Layer: Daily Action Blocks -->
+  <rect x="44" y="70" width="40" height="9" rx="4.5" fill="#FFFFFF" fill-opacity="0.55" />
+  
+  <!-- Checkmark / Focus Dot -->
+  <circle cx="64" cy="94" r="8" fill="#38B44A" />
+  <path d="M60 94 L63 97 L69 91" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+</svg>
